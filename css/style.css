@@ -1,27 +1,23 @@
-/* style.css */
 
 :root {
-  /* Your Custom Color Palette */
   --forest-green: #1A3C34;
   --ice-blue: #F4F9FF;
   --chocolate-brown: #2D2424;
   --soft-brown: #5C4033;
   --white: #ffffff;
-  
-  /* Layout Spacing */
   --nav-height: 80px;
 }
 
-/* Base Styles */
-body {
+body 
+{
   background-color: var(--ice-blue);
   color: var(--chocolate-brown);
   font-family: 'Inter', sans-serif;
   margin: 0;
 }
 
-/* Professional Navigation Classes */
-.nav-container {
+.nav-container 
+{
   position: fixed;
   top: 0;
   width: 100%;
@@ -63,7 +59,7 @@ body {
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: var(--soft-brown);
+  color: var(--forest-green);
   text-decoration: none;
   transition: color 0.3s ease;
 }
