@@ -139,7 +139,7 @@ body
 .hero-description {
   font-size: 1.25rem;
   line-height: 1.6;
-  color: var(--soft-brown);
+  color: var(--forest-green);
 }
 
 .highlight {
@@ -150,8 +150,6 @@ body
 .badge-cs {
   display: inline-flex; 
   align-items: center;
-  
-  /* THIS IS THE FIX: It tells the flexbox 'don't stretch me' */
   align-self: flex-start; 
   
   padding: 6px 14px;
@@ -164,5 +162,5 @@ body
   font-weight: 700;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
-  white-space: nowrap; /* Prevents the text from wrapping inside the badge */
+  white-space: nowrap;
 }
