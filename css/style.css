@@ -108,24 +108,28 @@ body {
 }
 
 .hero-image-wrapper {
-  flex: 1; /* Takes up equal space */
+  /* This is the secret—limit the width of the 'frame' */
   width: 100%;
-  max-width: 450px; /* Increased size so it's not cut off */
+  max-width: 320px; /* Adjust this number to make it bigger or smaller */
+  flex-shrink: 0;   /* Prevents the text from squishing the photo */
 }
 
 .hero-image {
   width: 100%;
-  height: auto; /* Maintains natural proportions */
-  aspect-ratio: 4 / 5; /* Professional portrait ratio */
-  object-cover: cover;
-  border-radius: 32px;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
-  border: 8px solid var(--white);
-  /* Removed grayscale and rotation as requested */
+  height: auto;
+  aspect-ratio: 1 / 1; /* Makes it a perfect square, or use 4/5 for a portrait look */
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border: 4px solid var(--white);
 }
 
+/* Let's fix the text alignment now that the photo is smaller */
 .hero-text-wrapper {
-  flex: 1.5; /* Gives the text a bit more room than the photo */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-title {
