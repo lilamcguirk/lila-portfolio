@@ -148,13 +148,17 @@ body
 }
 
 .badge-cs {
-  display: inline-block;
-  padding: 4px 10px;
-  background-color: var(--ice-blue);
+  display: inline-flex; 
+  align-items: center;
+  
+  padding: 6px 14px;
+  background-color: transparent;
   color: var(--forest-green);
   border: 1.5px solid var(--forest-green);
-  border-radius: 8px;
-  font-size: 0.75rem;
+  border-radius: 12px;
+  
+  font-size: 0.8rem;
   font-weight: 700;
-  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
 }
