@@ -84,3 +84,66 @@ body {
 .btn-contact:hover {
   opacity: 0.7;
 }
+
+/* --- Hero Section Styles --- */
+.hero-section {
+  padding: 160px 40px 80px 40px; /* Extra top padding for the fixed nav */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column; /* Stack on mobile */
+  gap: 60px;
+  align-items: center;
+}
+
+/* Desktop: Photo on Left, Text on Right */
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row; 
+    text-align: left;
+  }
+}
+
+.hero-image-wrapper {
+  flex: 1; /* Takes up equal space */
+  width: 100%;
+  max-width: 450px; /* Increased size so it's not cut off */
+}
+
+.hero-image {
+  width: 100%;
+  height: auto; /* Maintains natural proportions */
+  aspect-ratio: 4 / 5; /* Professional portrait ratio */
+  object-cover: cover;
+  border-radius: 32px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  border: 8px solid var(--white);
+  /* Removed grayscale and rotation as requested */
+}
+
+.hero-text-wrapper {
+  flex: 1.5; /* Gives the text a bit more room than the photo */
+}
+
+.hero-title {
+  font-size: clamp(3rem, 8vw, 5rem); /* Responsive font size */
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--forest-green);
+  margin-bottom: 24px;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--soft-brown);
+}
+
+.highlight {
+  color: var(--chocolate-brown);
+  font-weight: 700;
+}
