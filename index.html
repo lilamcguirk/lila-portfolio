@@ -1,37 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lila McGuirk</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lila McGuirk | Frontend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-      body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-        background: #0f172a;
-        color: #e5e7eb;
-      }
-      .container {
-        text-align: center;
-      }
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-      }
-      p {
-        font-size: 1.1rem;
-        opacity: 0.85;
-      }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; }
     </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Welcome this is me trying to make this work</h1>
-      <p>lilamcguirk.com is live. Portfolio coming soon.</p>
-    </div>
-  </body>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        const App = () => {
+            const [activeSection, setActiveSection] = useState('home');
+
+            const projects = [
+                {
+                    title: "React Calculator",
+                    desc: "A logic-heavy calculator built during my Meta certification. Handles complex operations with a sleek UI.",
+                    tech: ["React", "CSS Grid", "Logic"],
+                    link: "#"
+                },
+                {
+                    title: "Upcoming Project",
+                    desc: "Currently building a dynamic dashboard using real-time API data to demonstrate state management.",
+                    tech: ["React", "Tailwind", "Fetch API"],
+                    link: "#"
+                }
+            ];
+
+            return (
+                <div className="min-h-screen text-slate-900">
+                    {/* --- NAVIGATION --- */}
+                    <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+                        <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+                            <span className="font-bold text-xl tracking-tighter">LM.</span>
+                            <div className="flex gap-8 text-sm font-medium text-slate-600">
+                                <a href="#home" className="hover:text-black transition">Home</a>
+                                <a href="#projects" className="hover:text-black transition">Projects</a>
+                                <a href="#resume" className="hover:text-black transition">Resume</a>
+                                <a href="mailto:your-email@example.com" className="bg-black text-white px-4 py-2 rounded-full hover:bg-slate-800 transition">Contact</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    {/* --- HERO SECTION --- */}
+                    <section id="home" className="pt-32 pb-20 px-6">
+                        <div className="max-w-3xl mx-auto">
+                            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+                                Building digital experiences that matter.
+                            </h1>
+                            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+                                Hi, I'm <span className="text-black font-semibold">Lila McGuirk</span>. 
+                                I'm a frontend developer specializing in React and modern UI/UX design. 
+                                I turn complex problems into clean, functional code.
+                            </p>
+                        </div>
+                    </section>
+
+                    {/* --- PROJECTS --- */}
+                    <section id="projects" className="py-20 bg-slate-50 px-6">
+                        <div className="max-w-5xl mx-auto">
+                            <h2 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-12">Selected Work</h2>
+                            <div className="grid md:grid-cols-2 gap-8">
+                                {projects.map((p, i) => (
+                                    <div key={i} className="group bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+                                        <div className="flex justify-between items-start mb-4">
+                                            <h3 className="text-2xl font-bold">{p.title}</h3>
+                                            <span className="text-slate-400">0{i+1}</span>
+                                        </div>
+                                        <p className="text-slate-600 mb-6">{p.desc}</p>
+                                        <div className="flex gap-2 mb-6">
+                                            {p.tech.map(t => (
+                                                <span className="text-xs font-semibold bg-slate-100 px-2 py-1 rounded" key={t}>{t}</span>
+                                            ))}
+                                        </div>
+                                        <a href={p.link} className="inline-flex items-center font-bold text-sm border-b-2 border-black pb-1 hover:gap-2 transition-all">
+                                            View Project &rarr;
+                                        </a>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* --- RESUME / SKILLS --- */}
+                    <section id="resume" className="py-20 px-6">
+                        <div className="max-w-3xl mx-auto">
+                            <h2 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-12">Resume & Skills</h2>
+                            <div className="space-y-12">
+                                <div>
+                                    <h3 className="text-2xl font-bold mb-4">The Skillset</h3>
+                                    <p className="text-slate-600 leading-relaxed mb-4">
+                                        React, JavaScript (ES6+), HTML5/CSS3, Tailwind CSS, Git/GitHub, and Responsive Design.
+                                    </p>
+                                    <a href="#" className="text-black font-bold flex items-center gap-2">
+                                        Download Full Resume (PDF) &darr;
+                                    </a>
+                                </div>
+                                <div className="border-l-2 border-slate-200 pl-8 space-y-8">
+                                    <div>
+                                        <h4 className="font-bold text-lg text-black">Meta Front-End Developer Certificate</h4>
+                                        <p className="text-slate-500 text-sm">Completed 2026</p>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-lg text-black">Freelance Frontend Project</h4>
+                                        <p className="text-slate-500 text-sm">2025 - Present</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* --- FOOTER --- */}
+                    <footer className="py-12 border-t border-slate-200 text-center">
+                        <p className="text-slate-400 text-sm">© 2026 Lila McGuirk. Built with React and Caffeine.</p>
+                    </footer>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
 </html>
