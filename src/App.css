@@ -563,3 +563,24 @@ body
   text-decoration: none;
   font-size: 0.85rem;
 }
+
+.skills-carousel-wrapper {
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.skills-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.skill-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1A3C34;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  opacity: 0.8;
+}

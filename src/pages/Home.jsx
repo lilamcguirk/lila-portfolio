@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import SkillsCarousel from '../components/SkillsCarousel';
 
 const projects = [
 {
@@ -36,6 +37,7 @@ const Home = () => {
             <p className="hero-description">Specializing in <span className="highlight">React systems</span> and <span className="highlight">API architecture</span>. Architecting clean, reusable code and high-performance logic driven by Computer Science principles.</p>
           </div>
         </div>
+        <SkillsCarousel />
       </section>
 
         <section className="projects-section">
