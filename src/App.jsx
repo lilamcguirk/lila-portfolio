@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
+import About from './pages/About';
+
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<div style={{padding: '100px'}}>About Page Coming Soon</div>} />
+          <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
