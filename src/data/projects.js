@@ -9,14 +9,14 @@ export const projects = [
     link: "https://www.toyota.com.au/"
   },
   {
-    title: "RevPayments Toyota",
-    desc: "Custom React integration for secure financial transactions. Engineered robust API communication and error-handling logic for high-volume billing.",
+    title: "Stripe Payment Gateway",
+    desc: "Custom React integration for secure financial transactions...",
     tech: ["React", "Stripe API", "Node.js"],
-    type: "Professional",
+    isDevelopment: true,
+    previewImage: '/images/RevPayments.png',
+    link: '/images/RevPayments.png',
     path: "/projects#stripe-payment-gateway",
-    detail: "Integrated Stripe payment APIs to enable secure online billing, transaction processing, and automated receipt generation for Toyota customers.",
-    link: "https://stripe.com/"
-  }
+    }
 ];
 
 export const PROJECT_CATEGORIES = [
