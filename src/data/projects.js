@@ -1,57 +1,71 @@
 export const projects = [
   {
     title: "Toyota AutoConsole",
-    desc: "A complete architectural rebuild of a vehicle management interface using Vue.js. Streamlined data visualization and system reactivity for enterprise automotive scale.",
-    tech: ["Vue.js", "State Management", "UI/UX"],
+    desc: "Architected and deployed a standardized Vue.js vehicle management system across 10 Australian Toyota dealerships.",
+    tech: ["Vue.js", "State Management", "UI/UX", "SEO", "SCSS", "Database Integration"],
     type: "Professional",
     path: "/projects#toyota-autoconsole",
-    detail: "Led the redevelopment of Toyota dealership websites across Australia using Vue.js, improving performance, maintainability, and UI consistency.",
-    link: "https://www.toyota.com.au/"
+    previewImage: '/images/autoconcole-collage.png',
+    link: "https://www.cmitoyota.com.au/"
   },
   {
-    title: "Stripe Payment Gateway",
-    desc: "Custom React integration for secure financial transactions...",
-    tech: ["React", "Stripe API", "Node.js"],
+    title: "Toyota RevPayments",
+    desc: "Developed a secure, PCI-compliant payment portal for Toyota by integrating the Stripe API with a custom React frontend for seamless financial transactions.",
+    tech: ["React", "Stripe API", "Vite", "Bootstrap"],
+    type: "Professional",
     isDevelopment: true,
     previewImage: '/images/RevPayments.png',
     link: '/images/RevPayments.png',
     path: "/projects#stripe-payment-gateway",
-    }
+},
+{
+    title: "Toyota Help Me Choose Quiz",
+    desc: "A data-driven recommendation engine built with ToyotaKit to help customers navigate complex financing options and find their ideal vehicle plan through an intuitive, multi-step quiz.",
+    tech: ["React", "Vite", "ToyotaKit", "SCSS"],
+    isDevelopment: true,
+    previewImage: '/images/hmc-collage.png',
+    link: '/images/hmc-collage.png',
+    path: "/projects#help-me-choose-quiz",
+}
 ];
 
 export const PROJECT_CATEGORIES = [
   {
     org: "T-Bone Productions",
-    description: "Developed and deployed production-grade web applications for enterprise clients including Toyota, Mazda, Lexus, Yokohama, and Salvation Army.",
+    description: "Engineering enterprise-scale web applications and API architectures for global leaders including Toyota, Lexus, and Mazda. Specialized in delivering high-performance, full-stack solutions across React and Vue.js ecosystems.",
     projects: projects
   },
   {
     org: "Red Barn Media Group",
-    description: "High-impact growth and web development.",
+    description: "Managed end-to-end web production by translating direct client requirements into high-performing digital solutions. Focused on high-volume delivery, transitioning from intern to junior developer by consistently building responsive sites.",
     projects: [
       {
-        title: "Profit Growth Platform",
-        tech: "React | PHP | SEO",
-        detail: "Engineered a custom site that contributed to an $850k net profit. Focused on user retention (98%) and behavioral analysis via Microsoft Clarity.",
-        link: "#"
+        title: "Responsive Website Development & SEO",
+        tech: ["HTML", "PHP", "SEO", "Responsive Design"],
+        desc: "Developed responsive sites for 200+ clients, driving a 941% profit increase for a premier account through technical SEO and user behavior analysis.",
+        previewImage: '/images/rbmg-collage.png',
+        link: 'https://www.cavindermechanical.com/'
       }
     ]
   },
   {
     org: "The University of Vermont",
-    description: "Academic projects and software engineering foundations.",
+    description: "Computer Science student and Teaching Assistant at UVM. Specializing in Web and Software Development with a focus on Systems Architecture and Algorithm Design.",
     projects: [
       {
-        title: "Distributed Systems Lab",
-        tech: "C++ | Java",
-        detail: "Developed a multi-threaded system to handle concurrent data processing, focusing on memory management and speed.",
-        link: "#"
+        title: "Evolutionary Robotics",
+        tech: ["Python", "Iterative Design"],
+        desc: "Engineered a sensor-based robot capable of autonomous navigation and obstacle avoidance.",
+        previewImage: '/images/robotics-collage.png',
+        youtubeLink: "https://www.youtube.com/@LilaMcGuirk",
+        githubLink: "https://github.com/lilamcguirk/mybots.git"
       },
       {
-        title: "Mobile Task Manager",
-        tech: "React Native | Firebase",
-        detail: "Built a cross-platform app with real-time database syncing and user authentication.",
-        link: "#"
+        title: "Pacman Remake",
+        tech: ["Python", "Pygame", "Game Development", "SQL", "Object-Oriented Programming"],
+        desc: "A full-scale recreation of the arcade classic, developed using Agile methodologies and Sprint cycles. Focused on modular software design, ghost AI state machines, and collision logic.",
+        githubLink: "https://github.com/zach-vanzura/Pac-Man.git",
+        previewImage: '/images/pac-man-final.mp4',
       }
     ]
   }

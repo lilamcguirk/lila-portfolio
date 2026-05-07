@@ -31,7 +31,7 @@ const Home = () => {
           <h2 className="section-label" style={{color: 'white', opacity: 0.8}}>Selected Work</h2>
           
             <div className="grid-2-col">
-            {projects.map((p, i) => (
+            {projects.slice(0, 2).map((p, i) => (
                 <div key={i} className="work-card">
                 <div className="work-card-top">
                     <span className="badge-pro">{p.type}</span>
