@@ -117,7 +117,8 @@ body
   margin: 0 auto;
 }
 
-.hero-container {
+.hero-container 
+{
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -127,15 +128,108 @@ body
   padding-left: 5%; 
 }
 
-@media (min-width: 768px) {
-  .hero-container {
+@media (min-width: 768px) 
+{
+  .hero-container 
+  {
     flex-direction: row; 
     text-align: left;
     gap: 100px;
     justify-content: flex-start;
   }
 }
-.hero-image-wrapper {
+
+@media (max-width: 767px)
+{
+  .hero-text-wrapper
+  {
+    order: 1;
+  }
+  .hero-image-wrapper
+  {
+    order: 2;
+  }
+  .hero-container 
+  {
+    padding-left: 0;
+    gap: 20px;
+  }
+  .hero-section
+  {
+    padding: 140px 40px 80px 40px;
+  }
+  .hero-image
+  {
+    width: 80% !important;
+    aspect-ratio: 4/4 !important;
+    display: inline !important;
+    border-radius: 200px !important;
+    text-align: center;
+  }
+  .hero-image-wrapper
+  {
+    text-align: center;
+  }
+  .grid-2-col
+  {
+    grid-template-columns: auto !important;
+  }
+  .projects-container
+  {
+    padding: 80px 5% !important;
+  }
+  .work-card
+  {
+    margin-bottom: 0 !important;
+  }
+  .resume-cta-card
+  {
+    text-align: center;
+  }
+  .resume-cta-text h2
+  {
+    font-size: 1.4rem !important;
+  }
+  .resume-cta-text p
+  {
+    font-size: .9rem !important;
+  }
+  .resume-cta-content
+  {
+    gap: 20px !important;
+  }
+  .resume-cta-section
+  {
+    padding: 60px 40px !important;
+  }
+  .nav-container
+  {
+    height: 100px !important;
+  }
+  .main-footer
+  {
+    padding: 60px 5% 60px !important;
+  }
+  .category-badges .badge-pro
+  {
+    font-size: 0.6em !important;
+  }
+  .work-card-content
+  {
+    padding: 30px !important;
+  }
+}
+
+@media (max-width: 360px)
+{
+  .category-badges .badge-pro
+  {
+    font-size: 0.5em !important;
+  }
+}
+
+.hero-image-wrapper 
+{
   width: 100%;
   max-width: 300px; 
   flex-shrink: 0;
@@ -319,6 +413,12 @@ body
 .projects-container {
   background-color: #1A3C34;
   padding: 100px 20%;
+}
+
+.projects-container-white {
+  background-color: white;
+  padding: 150px 100px 50px 100px;
+  
 }
 
 .grid-2-col {
@@ -746,7 +846,7 @@ body
 .resume-cta-text p {
   color: #5c6d67;
   font-size: 1.1rem;
-  max-width: 450px;
+  max-width: 540px;
   line-height: 1.6;
 }
 
@@ -932,13 +1032,11 @@ body
   }
   
   .work-card-image {
-    order: -1;
     height: 300px;
     padding: 20px;
   }
 }
 
-/* The Status Dots */
 .status-dot {
   width: 8px;
   height: 8px;
@@ -1017,10 +1115,10 @@ body
 }
 
 .main-footer {
-  background-color: #142e28; /* A darker shade than your Forest Green, for depth */
-  padding: 100px 5% 60px; /* High top padding to push it away from the content */
+  background-color: #142e28;
+  padding: 100px 5% 60px;
   color: #ffffff;
-  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Very faint line separator */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-container {
@@ -1030,13 +1128,14 @@ body
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px; /* Separates the links from the legal text */
+  gap: 40px;
 }
 
 .footer-links {
   display: flex;
   gap: 20px;
   align-items: center;
+  justify-content: center;
 }
 
 .footer-link {
@@ -1115,4 +1214,19 @@ body
   transition: opacity 0.3s ease;
 }
 
+.logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
 
+.social-links svg {
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.social-links svg:hover {
+  color: #2a8a54;
+  transform: translateY(-3px);
+}

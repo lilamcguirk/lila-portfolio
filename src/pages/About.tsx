@@ -17,7 +17,7 @@ const gallery = [
 
   return (
     <section className="about-section">
-      <div className="projects-container">
+      <div className="projects-container-white">
         <div className="about-intro-grid">
           <div className="about-headline">
             <span className="badge-pro">The Person Behind the Code</span>

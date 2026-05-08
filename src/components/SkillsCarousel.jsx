@@ -7,8 +7,8 @@ import 'swiper/css';
 const SkillsCarousel = () => {
   const skills = [
     "Python", "JavaScript", "TypeScript", "Java", "C++", "C", 
-    "React", "Vue.js", "HTML5", "CSS3", "Stripe API", 
-    "Firebase", "PHP", "SQL", "Google Analytics", "Agile"
+    "React", "Vue.js", "HTML", "SCSS", "Stripe API", 
+    "Firebase", "PHP", "SQL", "SEO"
   ];
 
   return (
@@ -33,7 +33,7 @@ const SkillsCarousel = () => {
       >
         {skills.map((skill, index) => (
           <SwiperSlide key={index}>
-            <div className="skill-item">{skill}</div>
+                <div className="skill-item">{skill}</div>
           </SwiperSlide>
         ))}
       </Swiper>

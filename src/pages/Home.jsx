@@ -56,26 +56,26 @@ const Home = () => {
         </div>
       </section>
 
-        <section className="resume-cta-section">
+    <section className="resume-cta-section">
         <div className="resume-cta-card">
             <div className="resume-cta-content">
-            <div className="resume-cta-text">
-                <span className="badge-pro">Education & Experience</span>
-                <h2>Interested in the technical details?</h2>
-                <p>
-                View my full background, including my work at <strong>Toyota</strong> and 
-                <strong> Red Barn Media</strong>, plus my academic research at <strong>UVM</strong>.
-                </p>
-            </div>
+                <div className="resume-cta-text">
+                    <span className="badge-pro">Education & Experience</span>
+                    <h2>Interested in the technical details?</h2>
+                    <p>
+                    View my full background, including my work at <strong>T-Bone Productions</strong> and 
+                    <strong> Red Barn Media Group</strong>, plus my academic studies at <strong>the University of Vermont</strong>.
+                    </p>
+                </div>
             
-            <div className="resume-cta-action">
-                <Link to="/resume" className="pill-button-dark">
-                Explore Full Resume
-                </Link>
-                <span className="availability-tag">
-                <span className="dot"></span> Available for Full-Time 2025
-                </span>
-            </div>
+                <div className="resume-cta-action">
+                    <Link to="/resume" className="pill-button-dark">
+                    Explore Full Resume
+                    </Link>
+                    <span className="availability-tag">
+                    <span className="dot"></span> Available for Full-Time
+                    </span>
+                </div>
             </div>
         </div>
     </section>
