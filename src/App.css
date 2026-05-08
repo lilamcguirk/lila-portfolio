@@ -178,6 +178,10 @@ body
   {
     padding: 80px 5% !important;
   }
+  .projects-container-white
+  {
+    padding: 150px 30px 50px;
+  }
   .work-card
   {
     margin-bottom: 0 !important;
