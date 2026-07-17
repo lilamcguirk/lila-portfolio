@@ -345,7 +345,7 @@ body
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  scroll-margin-top: 100px; /* This keeps the title from being hidden under the nav */
+  scroll-margin-top: 100px;
 }
 
 .project-card:hover {
@@ -361,19 +361,18 @@ body
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px;
-  max-width: 280px; /* Keeping text blocks tight */
+  max-width: 280px;
 }
 
-/* ELEGANT RESUME STRIP */
 .resume-footer {
   margin: 120px auto 80px;
   max-width: 900px;
-  padding-left: 5%; /* Matches your hero shift */
+  padding-left: 5%;
   border-top: 1px solid rgba(26, 60, 52, 0.1);
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; /* Aligns text and button to the bottom */
+  align-items: flex-end;
 }
 
 .resume-info h2 {
@@ -549,6 +548,15 @@ body
   border-radius: 4px;
 }
 
+@media (max-width: 767px)
+{
+  .resume-paper
+  {
+    max-width: 350px;
+    padding: 20px 20px;
+  }
+}
+
 .resume-header {
   text-align: center;
   border-bottom: 2px solid #1A3C34;
@@ -621,6 +629,14 @@ body
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+@media (max-width: 767px)
+{
+  .resume-actions 
+  {
+    margin-top: 30px;
+  }
 }
 
 .projects-hero {
@@ -819,7 +835,7 @@ body
 
 .resume-cta-section {
   padding: 100px 40px;
-  background-color: #f4f7f6; /* Light gray to contrast the dark project section above */
+  background-color: #f4f7f6;
 }
 
 .resume-cta-card {
@@ -837,7 +853,7 @@ body
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  flex-wrap: wrap; /* Good for mobile */
+  flex-wrap: wrap;
 }
 
 .resume-cta-text h2 {
