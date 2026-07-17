@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-legal">
           <p className="footer-brand">Lila Mcguirk | Full-Stack Software Engineer</p>
             <div className="footer-links social-links">
-                <a href="https://linkedin.com/in/yourprofile">
+                <a href="https://linkedin.com/in/lila-mcguirk-75a54520b">
                     <FontAwesomeIcon icon={faLinkedin} size="1x" />
                 </a>
                 <a href="mailto:lilamcguirk1@gmail.com">
